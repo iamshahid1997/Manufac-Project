@@ -5,6 +5,7 @@ import { statsCreation } from "./statsCreation";
 export function calculateFlavanoidsStats() {
   const itemsByClass = {} as IItemsByClass;
 
+  // sperating wine data based on different Alcohol classes
   WINE_DATA.forEach((data: IFlavanoids) => {
     const key = data.Alcohol;
     if (!(key in itemsByClass)) itemsByClass[key] = [];
@@ -12,7 +13,7 @@ export function calculateFlavanoidsStats() {
       data: data.Flavanoids,
     });
   });
-  console.log(itemsByClass)
+  // getting stats data from statsCreation function
   const stats = statsCreation(itemsByClass);
   return stats;
 }

@@ -2,6 +2,7 @@ import WINE_DATA from "../Wine-Data.json";
 import { IGamma } from "../types";
 
 export function createGamma() {
+  // creating new property Gamma
   const gammaData = {} as IGamma;
   WINE_DATA.forEach(
     (data: {

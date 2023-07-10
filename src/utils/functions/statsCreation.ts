@@ -7,6 +7,7 @@ export function statsCreation(itemsByClass : IItemsByClass) {
         const meanValue = mean(itemsByClass[key]);
         const medianValue = median(itemsByClass[key]);
         const modeValues = mode(itemsByClass[key]);
+        // creating final stats object
         stats[key] = {
           mean: meanValue,
           median: medianValue,
