@@ -16,3 +16,8 @@ export type IGamma = {
     Alcohol: number;
     Gamma: number;
 }[];
+
+export type IFlavanoids = {
+  Alcohol: number;
+  Flavanoids: number;
+};
