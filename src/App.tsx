@@ -7,9 +7,9 @@ import { calculateGamma } from "./utils/functions/calculateGammaStats";
 import GammaTable from "./components/GammaTable";
 
 function App() {
-  const [flavanoidsData, setFlavanoidsData] = useState<IStats>();
-  const [createdGammaData, setCreatedGammaData] = useState<IGamma>();
-  const [gammaData, setGammaData] = useState<IStats>();
+  const [flavanoidsData, setFlavanoidsData] = useState<IStats>(); // state to store stats for flavanoids
+  const [createdGammaData, setCreatedGammaData] = useState<IGamma>(); // state to store newly created gamma data
+  const [gammaData, setGammaData] = useState<IStats>(); // state to store stats for Gamma
   useEffect(() => {
     const wineData = calculateFlavanoidsStats();
     const createdGamma = createGamma();
@@ -23,12 +23,11 @@ function App() {
     }
   }, [createdGammaData])
 
-  console.log(flavanoidsData, gammaData);
-
-
   return (
     <div style={{display: 'flex', gap:'10px'}}>
-      <FlavanoidsTable data={flavanoidsData} />
+      {/* Table for Flavonoids Stats */}
+      <FlavanoidsTable data={flavanoidsData} /> 
+      {/* Table for Gamma Stats */}
       <GammaTable data={gammaData} />
     </div>
   );

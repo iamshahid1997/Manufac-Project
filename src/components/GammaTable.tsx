@@ -1,6 +1,7 @@
 import { IStats } from "../utils/types";
 import Table from "./table/table";
 
+// type defination for props
 interface props {
   data: IStats | undefined;
 }

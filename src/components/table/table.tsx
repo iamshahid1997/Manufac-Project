@@ -1,5 +1,6 @@
 import { IStats } from "../../utils/types";
 
+// type defination for props
 interface props {
   data: IStats | undefined;
   title: string;
