@@ -1,28 +1,24 @@
 export function mean(arr: { data: number }[]) {
   // ex : mean of [3, 5, 4, 4, 1, 1, 2, 3] is 2.875
   let total = 0;
+  console.log(arr)
   for (let i = 0; i < arr.length; i++) {
     total += arr[i].data;
   }
-  return total;
+  return total/arr.length;
 }
 
 export function median(arr: { data: number }[]) {
-  // median of [3, 5, 4, 4, 1, 1, 2, 3] = 3
-  var median = 0,
-    numsLen = arr.length;
-  arr.sort();
-  if (numsLen % 2 === 0) {
-    // is even
-    // average of two middle numbers
-    median =
-      (arr[numsLen / 2 - 1].data + arr[numsLen / 2].data) / 2;
-  } else {
-    // is odd
-    // middle number only
-    median = arr[(numsLen - 1) / 2].data;
-  }
-  return median;
+  const middle = (arr.length + 1) / 2;
+      
+        // Avoid mutating when sorting
+        const sorted = [...arr].sort((a, b) => a.data - b.data);
+        const isEven = sorted.length % 2 === 0;
+      
+        return isEven ? (sorted[middle - 1.5].data  // is even , average of two middle numbers
+            + sorted[middle - 0.5].data) / 2 :
+            sorted[middle - 1].data;  // is odd ,middle number only
+
 }
 
 export function mode(arr: { data: number }[]) {

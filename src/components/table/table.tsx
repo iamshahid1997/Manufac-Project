@@ -14,8 +14,8 @@ function Table({ data, title }: props) {
           <b>Measures</b>
         </td>
         {data &&
-          Object.keys(data).map((d) => (
-            <td colSpan={3} align="center" height={50} width={200}>
+          Object.keys(data).map((d, i) => (
+            <td key={i} colSpan={3} align="center" height={50} width={200}>
               Class {d}
             </td>
           ))}
@@ -25,8 +25,8 @@ function Table({ data, title }: props) {
           <b>{title} Mean</b>
         </td>
         {data &&
-          Object.keys(data).map((d: any) => (
-            <td colSpan={3} align="center" height={50} width={200}>
+          Object.keys(data).map((d: any,i) => (
+            <td key={i} colSpan={3} align="center" height={50} width={200}>
               {data[parseInt(d)].mean.toFixed(3)}
             </td>
           ))}
@@ -36,8 +36,8 @@ function Table({ data, title }: props) {
           <b>{title} Median</b>
         </td>
         {data &&
-          Object.keys(data).map((d: any) => (
-            <td colSpan={3} align="center" height={50} width={200}>
+          Object.keys(data).map((d: any, i) => (
+            <td key={i} colSpan={3} align="center" height={50} width={200}>
               {data[parseInt(d)].median.toFixed(3)}
             </td>
           ))}
@@ -47,8 +47,8 @@ function Table({ data, title }: props) {
           <b>{title} Mode</b>
         </td>
         {data &&
-          Object.keys(data).map((d: any) => (
-            <td colSpan={3} align="center" height={50} width={200}>
+          Object.keys(data).map((d: any, i) => (
+            <td key={i} colSpan={3} align="center" height={50} width={200}>
               {data[parseInt(d)].mode.map((m, i) => (
                 <span>
                   {" "}
