@@ -15,7 +15,7 @@ export function createGamma() {
       const gamma = (data.Ash * data.Hue) / data.Magnesium;
       gammaData[index] = {
         Alcohol: data.Alcohol,
-        Gamma: parseFloat(gamma.toFixed(3))
+        Gamma: parseFloat(gamma.toFixed(6))
       }
     }
   );
