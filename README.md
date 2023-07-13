@@ -4,5 +4,8 @@ Steps to run the project:
 3. After this run command : yarn start to start the project locally.
 
 
-<img width="711" alt="Screenshot 2023-07-11 at 1 52 06 AM" src="https://github.com/iamshahid1997/Manufac-Project/assets/41151902/a9a6d791-cc0b-4cc5-a904-f61fdcd36eb3">
-<img width="730" alt="Screenshot 2023-07-11 at 1 51 56 AM" src="https://github.com/iamshahid1997/Manufac-Project/assets/41151902/c1d41a52-e6b4-4376-b0e0-5dcfb4639c86">
+
+
+
+<img width="728" alt="Screenshot 2023-07-13 at 10 48 13 AM" src="https://github.com/iamshahid1997/Manufac-Project/assets/41151902/a0e4ad40-f584-4c2c-90be-65cf798ca9e3">
+<img width="710" alt="Screenshot 2023-07-13 at 10 48 02 AM" src="https://github.com/iamshahid1997/Manufac-Project/assets/41151902/e63b1f7f-1632-46d1-9648-a420ef4c2421">
